@@ -1,0 +1,23 @@
+﻿<Window x:Class="Praktika1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Praktika1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="516" Width="802" Background="#FF887DDA">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="Button1" Content="&lt;Табица Клиентов&gt;" HorizontalAlignment="Center" Margin="0,22,0,0" Width="782" Click="Button_Click1" FontSize="22" RenderTransformOrigin="0.499,0.498" Height="107" VerticalAlignment="Top"/>
+        <Button x:Name="Button2" Grid.Column="1" Content="&lt;Таблица Книжек&gt;" HorizontalAlignment="Left" Height="105" Margin="10,134,0,0" VerticalAlignment="Top" Width="782" Grid.ColumnSpan="2" Click="Button_Click2" FontSize="22" />
+        <Button x:Name="Button3" Grid.Column="1" Content="&lt;Таблица Заказов&gt;" HorizontalAlignment="Left" Height="105" Margin="10,245,0,0" VerticalAlignment="Top" Width="782" Grid.ColumnSpan="2" Click="Button_Click3" FontSize="22"/>
+        <Button x:Name="Button4" Content="&lt;Таблица информации о заказах&gt;" HorizontalAlignment="Center" Height="110" Margin="0,355,0,0" VerticalAlignment="Top" Width="782" Click="Button_Click4" FontSize="22"/>
+        <Frame x:Name="FirstPage"/>
+        <Frame x:Name="SecondPage"/>
+        <Frame x:Name="ThirdPage"/>
+        <Frame x:Name="FourPage" Navigated="FourPage_Navigated"/>
+    </Grid>
+</Window>
